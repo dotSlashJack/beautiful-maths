@@ -1,6 +1,4 @@
-import { select, arc } from 'd3';
-
-const svg = select('svg'); //select all with svg tab
+const svg = d3.select('svg'); //select all with svg tab
 
 const height = +svg.attr('height'); //recall + is same as parseFloat()
 const width = +svg.attr('width');
@@ -33,7 +31,7 @@ const rightEye = eyesGroup.append('circle')
     .attr('cx',eyeSpacing);
 
 const mouth = g.append('path')
-    .attr('d',arc()({
+    .attr('d',d3.arc()({
         innerRadius: 80,
         outerRadius: 100,
         startAngle: Math.PI / 2,

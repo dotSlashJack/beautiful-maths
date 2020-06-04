@@ -11,9 +11,17 @@
 
       </svg>
       <script src = "distributions.js"></script>
-      <script>
+      <script></script>
+      <br>
+      <input name="textbox1" type="text" />
 
-      </script>
+      <div id="option">
+         <input name="updateButton" 
+         type="button" 
+         value="Update" 
+         onclick="update(+document.getElementsByName('textbox1')[0].value)" />
+      </div>
+
       <p>!</p>
    </body>
 </html>
