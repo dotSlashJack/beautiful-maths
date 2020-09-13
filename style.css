@@ -1,4 +1,46 @@
 body{
     margin: 0px;
     overflow: hidden;
+    background-color: #1f2024;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 1%;
+    color: whitesmoke;
+}
+
+p{
+    color: whitesmoke;
+}
+
+.center{
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    margin: 0;
+    text-align: center; /* step 6 */
+}
+nav li {
+  display: inline-block; /* step 1 */
+  width: 20%; /* step 4 */
+  margin-right: -4px; /* step 5 */
+}
+nav a {
+  display: block; /* step 2 */
+  text-decoration: none; /* step 3 */
+}
+/* common text style */
+nav a {
+  font-family: sans-serif;
+  height: 40%; /* vertically center */
+  line-height: 40%; /* vertically center */
+  color: #fff;
+}
+nav a:hover {
+   /*color: #E8CC00;*/
+   color: #79FBF9;
 }
